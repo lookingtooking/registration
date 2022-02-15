@@ -1,0 +1,187 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(199, 199, 199);
+}
+
+.container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: fit-content;
+    background-color: #fff;
+    margin: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 3px rgba(51, 38, 38, 0.829);
+}
+
+h3 {
+    margin: 10px 0 20px 0;
+}
+
+.reg, .details {
+    box-sizing: border-box;
+    width: 45%;
+    margin: 20px;
+
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.label_pass, .label_user, .label_email {
+    display: flex;
+    gap: 10px;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.column3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.string1 {
+    display: flex;
+    gap: 20px;
+}
+
+.string2 {
+    display: flex;
+    gap: 30px;
+}
+
+.sex {
+    font-weight: 700;
+    appearance: none;
+    background: url(assets/triangle.svg) no-repeat right;
+    background-size: 5px;
+}
+
+.date {
+    font-weight: 700;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+/* размеры */
+
+.input_user, .input_email, .name {
+    width: 100%;
+}
+
+.sex, .date, .input_pass {
+    width: 50%;
+}
+
+.input_user, .input_email, .name, .input_pass, .sex, .date {
+    padding-left: 8px;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.label_checkbox {
+    margin-left: 25px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+hr {
+    border: 0.3px solid rgba(82, 82, 82, 0.103);
+    width: 100%;
+}
+
+input[type="submit"] {
+    color: #fff;
+    font-size: 16px;
+    background-color: rgb(64, 178, 231);
+    border: none;
+    padding: 10px 40px;
+    margin: 20px;
+    margin-left: auto;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .reg, .details {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 20px;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 599px) {
+    .reg, .details {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 20px;
+    }
+
+    .label_pass {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bg {
+        background-image: url(assets/pswd.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+
+    }
+
+    .label_pass>img {
+        display: none;
+    }
+
+    .input_pass {
+        margin-left: 40px;
+        width: 100%;
+    }
+
+    .sex {
+        font-weight: 700;
+        appearance: none;
+        background: url(assets/triangle.svg) no-repeat right;
+        background-size: 4px;
+    }
+
+    .string1, .string2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name, .date{
+        width: 98%;
+    }
+
+    .sex{
+        width: 100%;
+    }
+
+    .container{
+        padding-right: 20px;
+    }
+
+}

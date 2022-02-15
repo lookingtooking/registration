@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="reg">
+            <h3>Registration form</h3>
+            <form class="column1" action="">
+                <label class="label_user" for="">
+                    <img width="30px" src="assets/username.png" alt="">
+                    <input class="input_user" type="text" placeholder="Username">
+                </label>
+                <label class="label_email" for="">
+                    <img width="30px" src="assets/email.png" alt="">
+                    <input class="input_email" type="text" placeholder="Email address">
+                </label>
+                <label class="bg label_pass" for="">
+                    <img width="30px" src="assets/pswd.png" alt="">
+                    <input class=" input_pass" type="password" placeholder="Password">
+                    <input class="input_pass" type="password" placeholder="Confirm password">
+                </label>
+            </form>
+        </div>
+        <div class="details">
+            <h3>Personal details</h3>
+            <form class="column2" action="">
+                <label class="string1" for="">
+                    <input class="name" type="text" placeholder="First name">
+                    <input class="name" type="text" placeholder="Last name">
+                </label>
+                <label class="string2" for="">
+                    <select class="sex">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                    <input class="date" type="date">
+                </label>
+            </form>
+        </div>
+        <form class="column3" action="">
+            <label class="label_checkbox" for="">
+                <input type="checkbox">I want to receive news and special offers
+            </label>
+            <label class="label_checkbox" for="">
+                <input type="checkbox">I agree with Terms and Conditions
+            </label>
+        </form>
+        <hr>
+        <input type="submit" value="SUBMIT">
+    </div>
+</body>
+
+</html>
